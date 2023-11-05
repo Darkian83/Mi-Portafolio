@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="Description"
+      content="Template portafolio desarrollador UI/UX"
+    />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@^3/primeflex.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex/themes/saga-blue.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Gloria+Hallelujah&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3cae0dddef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+      <nav class="flex justify-content-between w-full navbar p-4">
+        <span class="logo cursor-pointer ml-4">
+          <img
+            src="./assets/Logo.png"
+            alt="Logo Portafolio"
+            width="50"
+            height="50"
+          />
+        </span>
+
+        <input
+          type="checkbox"
+          aria-label="Checkbox para mostrar y quitar hamburger menu"
+          class="checkbox xl:hidden"
+        />
+        <div class="hamburger__lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="header__info flex align-items-center gap-3">
+          <ul class="flex flex-column xl:flex-row">
+            <li class="text-xl">Sobre mi</li>
+            <li class="text-xl">Servicios</li>
+            <li class="text-xl">Portafolio</li>
+            <li class="text-xl">Contacto</li>
+          </ul>
+          <div class="hireMe__button pt-4">
+            <a
+              href="mailTo:Darkian03@hotmail.com"
+              aria-label="Enviar mensaje al correo"
+              class="cursor-pointer no-underline border-round-lg text-xl"
+              >Contratame</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HOME PAGE -->
+    <div class="container">
+      <section
+        id="home"
+        class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4"
+      >
+        <div class="left__content col-12 xl:col-6">
+          <div class="message__bubble triangle mb md-2">
+            <div class="message__text p-2 sm:p3 text center">
+              <p>Hola, Yo soy</p>
+            </div>
+          </div>
+          <h1 class="text-3xl sm:text-5xl md:text-7xl">
+            Rodrigo Ian Abarca Perez
+          </h1>
+          <p class="text-gray-500">Desarrollo web frontent</p>
+          <div>
+            <div
+              class="home__buttons flex align-items-center gap2 mt-6"
+            >
+              <a
+                href=""
+                aria-label="Descargar curriculum"
+                class="cursor-pointer border-round-lg no-underline"
+                download
+                >Descargar CV</a
+              >
+              <button
+                aria-label="Delizar a seccion portafolio para mostrar mis trabajos"
+                class="cursor-pointer border-round-lg"
+              >
+                Mi trabajo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="righ__content col-9 sm-col-6 xl:col-5">
+          <img src="" alt="Foto perfil" width="100" height="100" />
+        </div>
+      </section>
+      <!-- ABOUT ME -->
+      <section
+        id="about"
+        class="about__me w-full min-h-screen flex align-item-center"
+      >
+        <div
+          class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0"
+        >
+          <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0 align-item-center">
+            <h1 class="text-3xl md:text-5xl">Sobre mi</h1>
+            <p class="text-gray-500">
+              Como apasionado desarrollador front-end junior, me enorgullece mi capacidad para transformar diseños creativos en experiencias web interactivas y atractivas. Con aproximadamente un año de experiencia freelance, he trabajado con tecnologías clave como React, HTML y CSS, y he adquirido una comprensión sólida de la creación de interfaces de usuario responsivas y accesibles. Mi enfoque se centra en la escritura de código limpio y eficiente, así como en la resolución ágil de problemas. Estoy entusiasmado por unirme a un equipo colaborativo y seguir aprendiendo y creciendo en el mundo del desarrollo web.
+            </p>
+            <div class="knowledge flex flex-column gap-3 mt-5">
+              <p>HTML</p>
+              <div class="progress__bar progress__html">
+                <span></span>
+              </div>
+              <p>CSS</p>
+              <div class="progress__bar progress__css">
+                <span></span>
+              </div>
+              <p>JavaScript</p>
+              <div class="progress__bar progress__javaScript">
+                <span></span>
+              </div>
+              <p>ReactJs</p>
+              <div class="progress__bar progress__reactJs">
+                <span></span>
+            </div>
+           
+            <div class="hireMe__button pt-4">
+              <a
+                href="mailTo:Darkian03@hotmail.com"
+                aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg"
+                >Contratame</a
+              >
+            </div>
+         
+          </div>
+        </div>
+        <div class="image col p-10 mt-6 md:mt-0 ">
+          <img
+            src="./assets/freelancer.jpg"
+            alt="foto relacionada acerca de mi"
+            width="100%"
+            
+          />
+        </div>
+      </section>
+    </div>
+    <!-- FREE LANCER SECTION -->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column align-item-center">
+      <p class="text-sm text-center">Tienes un proyecto en mente?</p>
+      <h1 class="text-center">Estoy disponible como freelancer</h1>
+      <div class="hireMe__button pt-4 ">
+        <a
+          href="mailTo:Darkian03@hotmail.com"
+          aria-label="Enviar mensaje al correo"
+          class="cursor-pointer no-underline border-round-lg"
+          >Escribeme</a
+        >
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <div class="container">
+    <section id="services" class="services min-h-full w-full pb-7">
+      <div class="services_title flex flex-column gap-3 text-center">
+        <h1 class="text-3xl md:text-5xl">Mis servicios</h1>
+        <p class="text-gray-400 text-sm md:text-base">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quod ipsa tenetur mollitia architecto, obcaecati laborum magnam odio, officia eligendi praesentium exercitationem sapiente optio? Voluptate ex exercitationem quae velit nobis.
+        </p>
+      </div>
+      <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+        <div class="card flex align-item-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-item-center justify-content-center">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="service__name">
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="card flex align-item-center col-12 sm:col lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-item-center justify-content-center">
+            <i class="fa-brands fa-css3"></i>
+          </div>
+          <div class="service__name">
+            <p>css</p>
+          </div>
+        </div>
+        <div class="card flex align-item-center col-12 sm:col-6 md:col-3 lg:col gap-5 p-2">
+          <div class="service__logo flex align-item-center justify-content-center">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="service__name">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="card flex align-item-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-item-center justify-content-center">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="service__name">
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="pportfolio min-h-full w-full pb-8 pt-8">
+      <div class="portfolio__title flex flex-column gap-3 text-center">
+      <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+      <p class="text-gray-400 text-sm md:text-base">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quod ipsa tenetur mollitia architecto, obcaecati laborum magnam odio, officia eligendi praesentium exercitationem sapiente optio? Voluptate ex exercitationem quae velit nobis.
+      </p>
+    </div>
+    <div class="portfolio__galllety">
+      <div class="gallery__categories mb-5 mt-5">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+    <!-- FOTEER -->
+    <section id="contact"></section>
+    </div>
+  
+  
+  
+  </body>
+  <script></script>
+</html>
